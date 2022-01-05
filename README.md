@@ -9,7 +9,7 @@ JavaScript will automatically attempt to modify the type of a variable in certai
 
 When the conversion is explicit, this is called type conversion.
 
-<code>
+```JavaScript
 
 const value1 = '5';
 
@@ -19,7 +19,8 @@ let sum = value1 + value2;
 
 console.log(sum);
 
-</code>
+```
+
 What will be the output?
 <details><summary>Click to Expand</summary>
 <code>59</code>
