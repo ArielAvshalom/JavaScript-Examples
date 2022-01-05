@@ -1,5 +1,6 @@
 // 1) Constructor Function
 //You can tell it is a constructor function because it Uppercased(the first letter of the name)
+console.log("Object using Constructor Fuction")
 const Person = function(name, birthYear){
   this.name = name;
   this.birthYear = birthYear;
@@ -21,14 +22,16 @@ console.log(ayush); // { birthYear: 1992, name: "ayush"}
 
 
 Person.prototype.calcAge = function(){
-  console.log(2021 - this.birthYear);
+  console.log(2022 - this.birthYear);
 }
-jonas.calcAge(); //31
-ayush.calcAge(); //29
+jonas.calcAge(); //32
+ayush.calcAge(); //20
 
 //////////////////////
 // 2) Class constructor
 // This way of creating an object and instantiating objects out of it works the same way as constructor function. The class key and the rest of the syntax is just a syntactical sugar over class constructor. The syntax was designed this way so that users of other languages can find a familiar syntax in this.
+
+console.log("Object using Class Constructor")
 class PersonCl{
   constructor(firstName, birthYear){
     this.firstName = firstName;
@@ -37,25 +40,26 @@ class PersonCl{
 
   // Method will be added to .prototype property
   calcAge (){
-    console.log(2020 - this.birthYear)
+    console.log(2022 - this.birthYear)
   }
 }
 
-const joe = new PersonCl('Ayush','1992');
+const joe = new PersonCl('Joe','1993');
 console.log(joe); //PersonCl {firstName: "Ayush", birthYear: "1992"}
-joe.calcAge(); //28
+joe.calcAge(); //29
 
 ///////////////////////////////////
 // 3) Object.create()
 //This approach is rarely used but for the sake of variations/options out there in js, it is included here.
 
+console.log("Object using Object dot Create")
 const Person1 = function(firstName, birthYear){
   this.firstName = firstName;
   this.birthYear = birthYear;
 }
 
 Person1.prototype.calcAge = function(){
-  console.log(2021 - this.birthYear);
+  console.log(2022 - this.birthYear);
 }
 
 const Student = function(firstName, birthYear, course){
@@ -79,4 +83,4 @@ console.log(mike);
 mike.introduce();
 //My name is Mike and I study  Computer Science.
 
-mike.calcAge(); //29
+mike.calcAge(); //30
