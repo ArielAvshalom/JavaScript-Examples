@@ -4,6 +4,7 @@ Our TAs present some JavaScript examples for students
 # Examples
 
 ## Type Coercion
+<details><summary>Click to Expand</summary>
 
 JavaScript will automatically attempt to modify the type of a variable in certain circumstances. When speaking about Type Coercion, this modification is implicit (implicit changes can give a developer a really bad day!).
 
@@ -34,4 +35,6 @@ console.log(sum);
 What will be the output?
 <details><summary>Click to Expand</summary>
 <code>14</code>
+</details>
+
 </details>
