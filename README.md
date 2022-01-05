@@ -1,7 +1,7 @@
 # JavaScript-Examples
 Our TAs present some JavaScript examples for students
 
-## Type Coercion (By Ariel A.)
+## Type Coercion (By Ariel A.) {#Type_Coercion}
 <details><summary>Click to Expand</summary>
 
 JavaScript will automatically attempt to modify the type of a variable in certain circumstances. When speaking about Type Coercion, this modification is implicit (implicit changes can give a developer a really bad day!).
