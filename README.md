@@ -92,6 +92,8 @@ console.log(0 || NaN)
 ```
 </details>
 
+<br>
+
 :cake: The bottom line:
 - values can be implicitly type coerced
 
