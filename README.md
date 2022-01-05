@@ -58,8 +58,7 @@ if (-Infinity)
 </details>
 
 ### &&
-
-<!-- <details><summary>Click to Expand</summary> -->
+<details><summary>Click to Expand</summary>
 
 the logical and operator returns the second operator if the first object is truthy
 
@@ -71,7 +70,13 @@ true && "dog"
 // return true
 ```
 
-<!-- </details> -->
+</details>
 
 :cake: The bottom line:
-Don't get confused by truthy-falsy, it's just a way of saying that JavaScript is a very loose language! Be careful with types and keep on programming!
+- values can be implicitly type coerced
+
+- Almost every value in Javascript can be coerced to be truthy in a boolean context (like an if conditional), so be wary!
+
+- Don't get confused by truthy-falsy, it's just a way of saying that JavaScript is a very loose language! 
+
+- Be careful with types and keep on programming!
