@@ -62,7 +62,7 @@ if (-Infinity)
 ### &&
 <details><summary>Click to Expand</summary>
 
-the logical and operator returns the second operator if the first object is truthy
+The logical and operator returns the second operator if the first object is truthy
 
 ```JavaScript
 true && "dog"
@@ -72,6 +72,25 @@ true && "dog"
 // return true
 ```
 
+</details>
+
+### ||
+<details><summary>Click to Expand</summary>
+
+The logical or operator 
+- returns the first operator when it is truthy 
+- returns the second operator when the first is falsy
+    - the second operator can be truthy or falsy in this case
+
+```JavaScript
+console.log(null || "Kale Pizza")
+// return "Kale Pizza"
+console.log("Strawberry Potato Squash" || "user")
+// return "Strawberry Potato Squash"
+
+console.log(0 || NaN)
+// return NaN
+```
 </details>
 
 :cake: The bottom line:
