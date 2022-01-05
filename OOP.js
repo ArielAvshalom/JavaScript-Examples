@@ -55,13 +55,13 @@ const Person1 = function(firstName, birthYear){
 }
 
 Person1.prototype.calcAge = function(){
-  console.log(2021 - this.birthYear);
+  console.log(2021 - Number(this.birthYear));
 }
 
 const Student = function(firstName, birthYear, course){
   //this.firstName = firstName;
   //this.birthYear = birthYear;
-        Person1.call( this,firstName, birthYear);
+        Person1.call( this.firstName, this.birthYear);
         this.course = course;
 }
 
