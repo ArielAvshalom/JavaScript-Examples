@@ -39,6 +39,31 @@ What will be the output?
 
 ## Truthy-Falsey
 
-A truthy value in Javascript is considered true in a boolean context (booleans are true or false, 1 or 0).
+A truthy value in Javascript is considered true in a boolean context (booleans are true or false, 1 or 0, etc.).
 
 All values are considered truthy unless they're falsy (code like <code>false, 0, -0, 0n, "", null, undefined, NaN</code>)
+
+Any of these can be coerced to be true in a boolean contex:
+
+```JavaScript
+if (true)
+if ({})
+if (42)
+if ("0")
+if ("false")
+if (new Date())
+if (-Infinity)
+```
+
+### &&
+the logical and operator returns the second operator if the first object is truthy
+```JavaScript
+true && "dog"
+// returns "dog"
+
+[] && true
+// return true
+```
+
+:cake: The bottom line:
+Don't get confused by truthy-falsy, it's just a way of saying that JavaScript is a very loose language! Be careful with types and keep on programming!
