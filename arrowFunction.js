@@ -13,8 +13,10 @@
  function isNegative(num) { return num < 0; } 
  // Arrow Function equivalent
  // To call an arrow function and reuse it, you need to store it in a variable, for example: 
-  let isNegative2 = (num) => num < 0; // // More info on arrow function vs normal function //
+  let isNegative2 = (num) => num < 0;
 
   console.log(isNegative(-1))
   console.log(isNegative2(1))
-  https://blog.bitsrc.io/arrow-functions-vs-regular-functions-in-javascript-458ccd863bc1
+
+// More info on arrow function vs normal function 
+// https://blog.bitsrc.io/arrow-functions-vs-regular-functions-in-javascript-458ccd863bc1
