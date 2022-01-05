@@ -59,7 +59,7 @@ if (-Infinity)
 ```
 </details>
 
-### &&
+### Logical And: &&
 <details><summary>Click to Expand</summary>
 
 The logical and operator returns the second operator if the first object is truthy
@@ -74,7 +74,7 @@ true && "dog"
 
 </details>
 
-### ||
+### Logical Or: ||
 <details><summary>Click to Expand</summary>
 
 The logical or operator 
@@ -87,7 +87,6 @@ console.log(null || "Kale Pizza")
 // return "Kale Pizza"
 console.log("Strawberry Potato Squash" || "user")
 // return "Strawberry Potato Squash"
-
 console.log(0 || NaN)
 // return NaN
 ```
