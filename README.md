@@ -1,7 +1,8 @@
 # JavaScript-Examples
 Our TAs present some JavaScript examples for students
 
-## Type Coercion (By Ariel A.)
+# Type Coercion and Truthy-Falsy
+## Type Coercion
 <details><summary>Click to Expand</summary>
 
 JavaScript will automatically attempt to modify the type of a variable in certain circumstances. When speaking about Type Coercion, this modification is implicit (implicit changes can give a developer a really bad day!).
@@ -37,11 +38,11 @@ What will be the output?
 
 </details>
 
-## Truthy-Falsey
-
+## Truthy-Falsy
+<details><summary>Click to Expand</summary>
 A truthy value in Javascript is considered true in a boolean context (booleans are true or false, 1 or 0, etc.).
 
-All values are considered truthy unless they're falsy (code like <code>false, 0, -0, 0n, "", null, undefined, NaN</code>)
+All values are considered truthy unless they're falsy (code like <code>false, 0, -0, 0n, "", null, undefined, NaN</code>).
 
 Any of these can be coerced to be true in a boolean contex:
 
@@ -54,8 +55,9 @@ if ("false")
 if (new Date())
 if (-Infinity)
 ```
-
+</details>
 ### &&
+<details><summary>Click to Expand</summary>
 the logical and operator returns the second operator if the first object is truthy
 ```JavaScript
 true && "dog"
@@ -64,6 +66,6 @@ true && "dog"
 [] && true
 // return true
 ```
-
+</details>
 :cake: The bottom line:
 Don't get confused by truthy-falsy, it's just a way of saying that JavaScript is a very loose language! Be careful with types and keep on programming!
