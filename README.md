@@ -2,6 +2,8 @@
 Our TAs present some JavaScript examples for students
 
 # Type Coercion and Truthy-Falsy
+<details><summary>Click to Expand</summary>
+
 ## Type Coercion
 <details><summary>Click to Expand</summary>
 
@@ -80,3 +82,5 @@ true && "dog"
 - Don't get confused by truthy-falsy, it's just a way of saying that JavaScript is a very loose language! 
 
 - Be careful with types and keep on programming!
+
+</details>
