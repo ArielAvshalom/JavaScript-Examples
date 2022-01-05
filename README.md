@@ -36,3 +36,9 @@ What will be the output?
 </details>
 
 </details>
+
+## Truthy-Falsey
+
+A truthy value in Javascript is considered true in a boolean context (booleans are true or false, 1 or 0).
+
+All values are considered truthy unless they're falsy (code like <code>false, 0, -0, 0n, "", null, undefined, NaN</code>)
