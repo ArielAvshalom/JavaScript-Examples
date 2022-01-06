@@ -105,23 +105,24 @@ console.log(0 || NaN)
 
 </details>
 
-Map vs Object
+# Map vs Object
 
 <details><summary>Click to Expand</summary>
 
 Objects are key value pairs. So are maps...so what (Wat) is the difference?
 
-A map has two or three features that diffrentiate it from an object:
+A map has two (or three) features that diffrentiate it from an object:
 
-    -It keeps track of the size of the map and you can get that value map.size
-    -It has an in order iteration of the key : value pairs to keep track of key : values in the order of insertion
-    -It uses the map.has(key) prototype to find a key in O(1) lookup time.
-        -Please note that objects do something similar with ```in``` and with object.hasOwnProperty() method.
+- It keeps track of the size of the map and you can get that value map.size
+- It has an in order iteration of the key : value pairs to keep track of key : values in the order of insertion
+- It uses the map.has(key) prototype to find a key in O(1) lookup time.
+    - Please note that objects do something similar with ```in``` and with object.hasOwnProperty() method.
 
 Objects are also used as classes of course and whenever you create a function and use ```this```, you're creating an object in the background.
 
-Maps are (relatively speaking) new.
-    
+Maps are (relatively speaking) new from ES6.js.
+There are also no "accidental keys" in maps, keys can be objects, functions, or an primative (an object only stores string or symbol keys), is optimized for adding and removing key-value pairs (look up hidden classes for objects behind the hood) and has no native support for serialization and parsing.
+
 
 
 </details>
