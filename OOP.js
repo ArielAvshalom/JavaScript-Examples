@@ -9,8 +9,8 @@ const Person = function(name, birthYear){
 //the "new" keyword is very powerful. When it is used:
 
 // 1)  an empty object is created,
-// 2) makes sure that this in the constructor is being referred to the instantiated object it is called on. You can see that in the original constructor above there is no return statement, but the new keyword takes care of that.
-// 3) and finally return that object.
+// 2) makes sure that "this" in the constructor is being referred to the instantiated object it is called on.
+// 3) and finally return that object.You can see that in the original constructor above there is no return statement, but the new keyword takes care of that.
 // 4) The new key word is also responsible for establishing (the concept of prototypal chain)
 
 
@@ -26,6 +26,7 @@ Person.prototype.calcAge = function(){
 }
 jonas.calcAge(); //32
 ayush.calcAge(); //20
+
 
 //////////////////////
 // 2) Class constructor
@@ -65,7 +66,7 @@ Person1.prototype.calcAge = function(){
 const Student = function(firstName, birthYear, course){
   //this.firstName = firstName;
   //this.birthYear = birthYear;
-        Person1.call( this.firstName, this.birthYear);
+        Person1.call(this, firstName, birthYear);
         this.course = course;
 }
 
