@@ -127,3 +127,9 @@ There are also no "accidental keys" in maps, keys can be objects, functions, or 
 
 </details>
 
+# Helpful JSX Hints
+
+<details><summary>Click to Expand</summary>
+
+- JSX or JavaScript XML translates directly to JS and is used with React for easier coding.
+- You can't use conditionals in JSX. A simple fix is to write your logic outside of JSX as an object or function and then reference that in the JSX. 
