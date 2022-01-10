@@ -146,5 +146,14 @@ There are also no "accidental keys" in maps, keys can be objects, functions, or 
     ```JavaScript
     authenticated ? renderApp() : renderLogin();
     ```
+
+    This type of logic can be used in JSX:
+
+    ```JavaScript
+    const x = 5;
+
+    const myelement = <h1>{(x) < 10 ? "Hello" : "Goodbye"}</h1>; //if x is less than 10 then hello, else goodbye.
+
+    ```
 - Elements like class in JS are className in JSX. This is a way for React to diffrentiate between JSX and JS.
 - Components need to be Capitalizated. This is also a way for React to diffrentiate between components and other elements.
