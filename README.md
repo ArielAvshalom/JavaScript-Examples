@@ -132,4 +132,6 @@ There are also no "accidental keys" in maps, keys can be objects, functions, or 
 <details><summary>Click to Expand</summary>
 
 - JSX or JavaScript XML translates directly to JS and is used with React for easier coding.
-- You can't use conditionals in JSX. A simple fix is to write your logic outside of JSX as an object or function and then reference that in the JSX. 
+- You can't use conditionals in JSX. A simple fix is to write your logic outside of JSX as an object or function and then reference that in the JSX.
+- Elements like class in JS are className in JSX. This is a way for React to diffrentiate between JSX and JS.
+- Components need to be Capitalizated. This is also a way for React to diffrentiate between components and other elements.
